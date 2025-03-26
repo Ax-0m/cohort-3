@@ -23,7 +23,7 @@
 
 // interface and types, to make something optional we add a ? before the column
 
-// interface User {
+// interface Page {
 //     name: string,
 //     age: number,
 //     address?: {
@@ -33,7 +33,7 @@
 //     }
 // };
 
-// let user: User = {
+// let user: Page = {
 //     name: "prakhar",
 //     age: 18,
 //     address: {
@@ -43,7 +43,7 @@
 //     }
 // }
 
-// let user2: User = {
+// let user2: Page = {
 //     name: "prakhar",
 //     age: 18,
 // }
