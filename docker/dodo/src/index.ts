@@ -1,16 +1,27 @@
 import express from "express";
+import { PrismaClient } from "../prisma/generated/prisma";
 
 const app =  express();
+const prismaClient = new PrismaClient();
+app.get("/", async (req, res) => {
+	const users = await prismaClient.user.findMany()
 
-app.get("/", (req, res) => {
 	res.json({
-		message: "Get Endpoint"
+		users
 	})
 })
 
-app.post("/", (req, res) => {
+app.post("/", async (req, res) => {
+
+	await prismaClient.user.create({
+		data: {
+			username: "Test",
+			password: "123456"
+		}
+	})
+
 	res.json({
-		message: "Post Endpoint"
+		message: "Signed up"
 	})
 })
 
