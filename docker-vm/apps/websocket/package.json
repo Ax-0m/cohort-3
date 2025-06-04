@@ -13,5 +13,8 @@
     "@types/ws": "^8.18.1",
     "ws": "^8.18.2",
     "db": "workspace:*"
+  },
+  "scripts": {
+    "start": "bun run index.ts"
   }
 }

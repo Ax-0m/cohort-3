@@ -13,5 +13,8 @@
     "@types/express": "^5.0.2",
     "express": "^5.1.0",
     "db": "workspace:*"
+  },
+  "scripts": {
+    "start": "bun run index.ts"
   }
 }
