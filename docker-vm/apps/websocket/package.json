@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "websocket",
   "module": "index.ts",
   "type": "module",
   "private": true,
@@ -10,8 +10,8 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "@types/express": "^5.0.2",
-    "express": "^5.1.0",
+    "@types/ws": "^8.18.1",
+    "ws": "^8.18.2",
     "db": "workspace:*"
   }
 }
